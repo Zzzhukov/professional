@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.of_accounting.for_the_activities.of_the_driving_school.professional.controller.StudentWorkspaceController">
+   <ImageView fx:id="logoImageView" fitHeight="152.0" fitWidth="176.0" layoutX="245.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../image/space.png" />
+      </image>
+   </ImageView>
+   <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="620.0" text="Система учета деятельности автошколы&#10;Профессионал" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="11.0" layoutY="90.0" prefHeight="33.0" prefWidth="620.0" text="Кабинет ученика" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="28.0" />
+      </font>
+   </Label>
+   <Button fx:id="exitButton" alignment="CENTER" layoutX="14.0" layoutY="412.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="201.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="ВЫЙТИ" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Button fx:id="userButton" alignment="CENTER" layoutX="425.0" layoutY="412.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="201.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="АККАУНТ" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Button fx:id="mondayButton" alignment="CENTER" layoutX="125.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#0013c9">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="125.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="ПН" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="tuesdayButton" alignment="CENTER" layoutX="181.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#0013c9">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="181.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="ВТ" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="wednesdayButton" alignment="CENTER" layoutX="237.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#a3addd">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="237.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="СР" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="thursdayButton" alignment="CENTER" layoutX="293.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="293.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="ЧТ" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="fridayButton" alignment="CENTER" layoutX="349.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="349.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="ПТ" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="saturdayButton" alignment="CENTER" layoutX="404.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="404.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="СБ" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Button fx:id="sundayButton" alignment="CENTER" layoutX="460.0" layoutY="240.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="56.0" style="-fx-background-color: #a3addd; -fx-border-color: #535353;" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Label alignment="CENTER" layoutX="460.0" layoutY="186.0" prefHeight="54.0" prefWidth="56.0" style="-fx-border-color: #535353; -fx-background-color: #c6c6c6;" text="ВС" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="10.0" layoutY="145.0" prefHeight="33.0" prefWidth="620.0" text="дни для обучения" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="28.0" />
+      </font>
+   </Label>
+</AnchorPane>

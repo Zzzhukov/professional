@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.of_accounting.for_the_activities.of_the_driving_school.professional.controller.AdministratorWorkspaceController">
+    <ImageView fitHeight="92.0" fitWidth="91.0" layoutX="535.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/space.png" />
+    </ImageView>
+    <ImageView fitHeight="92.0" fitWidth="91.0" layoutX="14.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../image/space.png" />
+    </ImageView>
+   <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="620.0" text="Система учета деятельности автошколы&#10;Профессионал" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="11.0" layoutY="90.0" prefHeight="33.0" prefWidth="620.0" text="Кабинет администратора" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="28.0" />
+      </font>
+   </Label>
+   <Button fx:id="exitButton" alignment="CENTER" layoutX="221.0" layoutY="412.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="201.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="ВЫЙТИ" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <TableView fx:id="teacherTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="codeTeacherTableColumn" prefWidth="75.0" text="Код" />
+         <TableColumn fx:id="teacherFullNameTableColumn" prefWidth="121.0" text="ФИО" />
+         <TableColumn fx:id="teacherPhoneTableColumn" prefWidth="121.0" text="Телефон" />
+         <TableColumn fx:id="teacherExperienceTableColumn" prefWidth="121.0" text="Стаж" />
+         <TableColumn fx:id="teacherContractTableColumn" prefWidth="121.0" text="Договор" />
+      </columns></TableView>
+   <TableView fx:id="inspectorTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="idInspectorTableColumn" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="inspectorFullNameTableColumn" prefWidth="75.0" text="ФИО" />
+         <TableColumn fx:id="inspectorPhoneTableColumn" prefWidth="75.0" text="Телефон" />
+         <TableColumn fx:id="inspectorJobTitleTableColumn" prefWidth="136.0" text="Специализация" />
+      </columns></TableView>
+   <TableView fx:id="studentTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="idStudentTableColumn" prefWidth="49.0" text="ID" />
+         <TableColumn fx:id="studentFullNameTableColumn" prefWidth="77.0" text="ФИО" />
+         <TableColumn fx:id="studentMedInfoTableColumn" prefWidth="77.0" text="Мед.инфо" />
+         <TableColumn fx:id="studentNumberTreatyTableColumn" prefWidth="69.0" text="Номер договора" />
+         <TableColumn fx:id="studentPhoneTableColumn" prefWidth="67.0" text="Телефон" />
+         <TableColumn fx:id="studentCodeTeacherTableColumn" prefWidth="67.0" text="Код учителя" />
+         <TableColumn fx:id="studentCodeInspectorTableColumn" prefWidth="77.0" text="Код инспектора" />
+         <TableColumn fx:id="studentCodeInstructorTableColumn" prefWidth="73.0" text="Код инструктора" />
+         <TableColumn fx:id="studentCodeSchoolTableColumn1" prefWidth="83.0" text="Код школы" />
+      </columns></TableView>
+   <TableView fx:id="drivingSchoolTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="codeSchoolTableColumn" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="nameTableColumn" prefWidth="75.0" text="Название" />
+         <TableColumn fx:id="priceTableColumn" prefWidth="75.0" text="Цена" />
+         <TableColumn fx:id="servicesTableColumn" prefWidth="75.0" text="Сервисы" />
+         <TableColumn fx:id="addressTableColumn" prefWidth="75.0" text="Адрес" />
+         <TableColumn fx:id="codeBossTableColumn" prefWidth="113.0" text="Код директора" />
+      </columns></TableView>
+   <TableView fx:id="instructorTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="idInstructorTableColumn" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="fullNameInstructorTableColumn" prefWidth="75.0" text="ФИО" />
+         <TableColumn fx:id="phoneInstructorTableColumn" prefWidth="75.0" text="Телефон" />
+         <TableColumn fx:id="experienceInstructorTableColumn" prefWidth="75.0" text="Стаж" />
+         <TableColumn fx:id="categoryInstructorTableColumn" prefWidth="75.0" text="Категория" />
+         <TableColumn fx:id="contractInstructorTableColumn" prefWidth="75.0" text="Договор" />
+      </columns></TableView>
+   <TableView fx:id="authorizationDataTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="idAuthorizationDataTableColumn" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="loginAuthorizationDataTableColumn" prefWidth="75.0" text="Логин" />
+         <TableColumn fx:id="passwordAuthorizationDataTableColumn" prefWidth="75.0" text="Пароль" />
+         <TableColumn fx:id="typeAuthorizationDataTableColumn" prefWidth="75.0" text="Тип" />
+         <TableColumn fx:id="userIdAuthorizationDataTableColumn" prefWidth="75.0" text="User id" />
+      </columns></TableView>
+   <TableView fx:id="bossTableView" layoutY="155.0" prefHeight="212.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" visible="false">
+      <columns>
+         <TableColumn fx:id="idBossTableColumn" prefWidth="75.0" text="ID" />
+         <TableColumn fx:id="fullNameBossTableColumn" prefWidth="222.0" text="ФИО" />
+         <TableColumn fx:id="experienceBossTableColumn" minWidth="6.0" prefWidth="132.0" text="Стаж" />
+         <TableColumn fx:id="phoneBossTableColumn" prefWidth="210.0" text="Телефон" />
+      </columns></TableView>
+   <Button fx:id="studentButton" alignment="CENTER" layoutX="70.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="ученики" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="teacherButton" alignment="CENTER" layoutX="148.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="78.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="учителя" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="schoolButton" alignment="CENTER" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="школы" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="inspectorButton" alignment="CENTER" layoutX="226.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="106.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="инспекторы" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="instructorButton" alignment="CENTER" layoutX="332.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="112.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="инструкторы" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="15.0" />
+      </font>
+   </Button>
+   <Button fx:id="userButton" alignment="CENTER" layoutX="542.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="пользователи" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="12.0" />
+      </font>
+   </Button>
+   <Button fx:id="bossButton" alignment="CENTER" layoutX="444.0" layoutY="124.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="директора" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="15.0" />
+      </font>
+   </Button>
+</AnchorPane>

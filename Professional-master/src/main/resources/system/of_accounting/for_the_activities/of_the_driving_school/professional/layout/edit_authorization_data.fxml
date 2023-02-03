@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" style="-fx-background-color: #c6c6c6;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="system.of_accounting.for_the_activities.of_the_driving_school.professional.controller.EditAuthorizationDataController">
+   <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="70.0" prefWidth="620.0" text="Система учета деятельности автошколы&#10;Профессионал" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="30.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="11.0" layoutY="90.0" prefHeight="33.0" prefWidth="620.0" text="Редактирование пользователя" textAlignment="CENTER" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="28.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="79.0" fitWidth="81.0" layoutX="282.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../image/space.png" />
+      </image>
+   </ImageView>
+   <Button fx:id="enterButton" alignment="CENTER" layoutX="439.0" layoutY="412.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="188.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="ВВОД" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <Button fx:id="backButton" alignment="CENTER" layoutX="15.0" layoutY="412.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="188.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="ОБРАТНО" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+   <TextField fx:id="passwordTextField" alignment="CENTER" focusTraversable="false" layoutX="327.0" layoutY="202.0" prefHeight="50.0" prefWidth="302.0" promptText="Пароль" style="-fx-background-color: #0021cb; -fx-border-color: #535353; -fx-text-fill: #eeeeee; -fx-font-family: Impact; -fx-font-size: 25;">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="userIdTextField" alignment="CENTER" focusTraversable="false" layoutX="327.0" layoutY="262.0" prefHeight="50.0" prefWidth="302.0" promptText="ID пользователя" style="-fx-background-color: #0021cb; -fx-border-color: #535353; -fx-text-fill: #eeeeee; -fx-font-family: Impact; -fx-font-size: 25;">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="idTextField" alignment="CENTER" focusTraversable="false" layoutX="238.0" layoutY="139.0" prefHeight="50.0" prefWidth="165.0" promptText="ID" style="-fx-background-color: #0021cb; -fx-border-color: #535353; -fx-text-fill: #eeeeee; -fx-font-family: Impact; -fx-font-size: 25;">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="loginTextField" alignment="CENTER" focusTraversable="false" layoutX="12.0" layoutY="202.0" prefHeight="50.0" prefWidth="302.0" promptText="Логин" style="-fx-background-color: #0021cb; -fx-border-color: #535353; -fx-text-fill: #eeeeee; -fx-font-family: Impact; -fx-font-size: 25;">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="typeTextField" alignment="CENTER" focusTraversable="false" layoutX="12.0" layoutY="262.0" prefHeight="50.0" prefWidth="302.0" promptText="Тип" style="-fx-background-color: #0021cb; -fx-border-color: #535353; -fx-text-fill: #eeeeee; -fx-font-family: Impact; -fx-font-size: 25;">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </TextField>
+   <Button fx:id="deleteButton" alignment="CENTER" layoutX="233.0" layoutY="412.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="188.0" style="-fx-background-color: #c6c6c6; -fx-border-color: #535353;" text="УДАЛИТЬ" textFill="#0021cb">
+      <font>
+         <Font name="Impact" size="27.0" />
+      </font>
+   </Button>
+</AnchorPane>
